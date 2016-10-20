@@ -1,6 +1,8 @@
-var paused_count =0;
-var resumed_count = 0;
-var launched_count = 0;
+var value = window.localStorage.getItem(Book);
+var value = window.localStorage.getItem(Pen);
+var value = window.localStorage.getItem(Phone);
+var value = window.localStorage.getItem(Keys);
+var value = window.localStorage.getItem(Laptop);
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -25,26 +27,5 @@ var launched_count = 0;
 		window.localStorage.setItem( keys, Car );
 		window.localStorage.setItem( Laptop, Windows );
 		
-		launched_count++;
 		updateDisplay();
     }
-
-    // Handle the pause event
-    //
-    function onPause() {
-		alert("pause");
-		paused_count++;
-		updateDisplay();
-    }
-	
-	function onResume() {
-		alert("resume");
-		resumed_count++;
-		updateDisplay();
-    }
-
-	window.localStorage.setItem( Book, Severn );
-	window.localStorage.setItem( Pen, Black );
-	window.localStorage.setItem( Phone, iPhone );
-	window.localStorage.setItem( keys, Car );
-	window.localStorage.setItem( Laptop, Windows );
