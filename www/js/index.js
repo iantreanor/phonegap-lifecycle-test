@@ -1,14 +1,8 @@
-var celebration = {
-    "chocbar":{
-	"Energy kj":"2068",
-    "Fat ":"24.4",
-	"Carbohydrate": "62.3",
-	"Protein ": "5.5",
-	"Salt": "0.40"
-    }	
-}
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
 
-obj = JSON.parse(celebration);
-
-document.getElementById("chocbar").innerHTML =
-obj.chocbar.Salt;
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
