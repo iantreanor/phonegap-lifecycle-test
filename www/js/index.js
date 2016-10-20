@@ -19,8 +19,11 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
-		document.addEventListener("resume", onResume, false);
-		document.addEventListener("pause", onPause, false);
+		window.localStorage.setItem( Book, Severn );
+		window.localStorage.setItem( Pen, Black );
+		window.localStorage.setItem( Phone, iPhone );
+		window.localStorage.setItem( keys, Car );
+		window.localStorage.setItem( Laptop, Windows );
 		
 		launched_count++;
 		updateDisplay();
