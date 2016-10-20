@@ -7,7 +7,15 @@
 <p id="demo"></p>
 
 <script>
-var simpsons = '{"firstName":"Homer","lastName":"Simpson","street":"742 evergreen terrace","city":"springfield","state":"?"}';
+var simpsons = '{
+"firstName":"Homer",
+"lastName":"Simpson",
+"address": '{
+"street":"742 evergreen terrace",
+"city":"springfield",
+"state":"?"
+}'
+}';
 
 var obj = JSON.parse(simpsons);
 
@@ -16,7 +24,8 @@ obj.firstName + "<br>" +
 obj.lastName + "<br>" +
 obj.street + "<br>" +
 obj.city + "<br>" +
-obj.state;
+obj.state + "<br>" +
+obj.address;
 </script>
 
 </body>
