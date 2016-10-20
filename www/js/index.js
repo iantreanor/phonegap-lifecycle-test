@@ -39,3 +39,9 @@ var launched_count = 0;
 		resumed_count++;
 		updateDisplay();
     }
+
+	window.localStorage.setItem( Book, Severn );
+	window.localStorage.setItem( Pen, Black );
+	window.localStorage.setItem( Phone, iPhone );
+	window.localStorage.setItem( keys, Car );
+	window.localStorage.setItem( Laptop, Windows );
