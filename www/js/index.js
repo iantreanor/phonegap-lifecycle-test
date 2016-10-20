@@ -10,9 +10,11 @@ var value = window.localStorage.getItem(Laptop);
     }
 	
 	function updateDisplay() {
-		$("#launched").text("Item" + launched_count);
-		$("#resumed").text("Application paused: " + paused_count);
-		$("#paused").text("Application resumed: " + resumed_count);
+		$("#book").text("book");
+		$("#pen").text("Pen");
+		$("#phone").text("Phone");
+		$("#Keys").text("Keys");
+		$("#Laptop").text("Laptop");
 	}
 
 
