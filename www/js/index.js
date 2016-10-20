@@ -10,7 +10,7 @@ var value = window.localStorage.getItem(Laptop);
     }
 	
 	function updateDisplay() {
-		$("#launched").text("Application launched: " + launched_count);
+		$("#launched").text("Item" + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
 		$("#paused").text("Application resumed: " + resumed_count);
 	}
@@ -21,11 +21,11 @@ var value = window.localStorage.getItem(Laptop);
     function onDeviceReady() {
 		alert("device ready");
         
-		window.localStorage.setItem( Book, Severn );
-		window.localStorage.setItem( Pen, Black );
-		window.localStorage.setItem( Phone, iPhone );
-		window.localStorage.setItem( keys, Car );
-		window.localStorage.setItem( Laptop, Windows );
+		window.localStorage.getItem( Book, Severn );
+		window.localStorage.getItem( Pen, Black );
+		window.localStorage.getItem( Phone, iPhone );
+		window.localStorage.getItem( keys, Car );
+		window.localStorage.getItem( Laptop, Windows );
 		
 		updateDisplay();
     }
