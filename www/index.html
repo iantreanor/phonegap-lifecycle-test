@@ -7,14 +7,18 @@
 <p id="demo"></p>
 
 <script>
-var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+var simpsons = '{"firstName":"Homer","lastName": "Simpson","address":{
+"streetAddress": "742 Evergreen Terrace",
+"city": "Springfield",
+"state": "?"}
+}';
 
 var obj = JSON.parse(text);
 
 document.getElementById("demo").innerHTML =
-obj.name + "<br>" +
-obj.street + "<br>" +
-obj.phone;
+obj.firstName + "<br>" +
+obj.lastName + "<br>" +
+obj.address;
 </script>
 
 </body>
