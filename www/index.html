@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
 <body>
 
-<h2>JSON Object Creation in JavaScript</h2>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
 
-<p id="demo"></p>
+  <div data-role="main" class="ui-content">
+    <p>Welcome! If you click on the link below, it will take you to Page Two.</p>
+    <a href="#pagetwo">Go to Page Two</a>
+  </div>
 
-<script>
-var simpsons = '{
-"firstName":"Homer",
-"lastName":"Simpson",
-"address": '{
-"street":"742 evergreen terrace",
-"city":"springfield",
-"state":"?"
-}'
-}';
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
 
-var obj = JSON.parse(simpsons);
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
 
-document.getElementById("demo").innerHTML =
-obj.firstName + "<br>" +
-obj.lastName + "<br>" +
-obj.street + "<br>" +
-obj.city + "<br>" +
-obj.state + "<br>" +
-obj.address;
-</script>
+  <div data-role="main" class="ui-content">
+    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
+    <a href="#pageone">Go to Page One</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
 
 </body>
 </html>
+
