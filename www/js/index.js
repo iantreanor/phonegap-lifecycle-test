@@ -1,8 +1,15 @@
-var text = '{"employees":[' +
-'{"firstName":"John","lastName":"Doe" },' +
-'{"firstName":"Anna","lastName":"Smith" },' +
-'{"firstName":"Peter","lastName":"Jones" }]}';
+$(document).on("pagecreate","#pageone",function(){
+  $('#submitButton').on("click", function(){
+    submitText();
+  });            
+});            
 
-obj = JSON.parse(text);
-document.getElementById("demo").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+function submitText() {
+	var text = $('#textinput').val();
+	alert(text);
+}
+
+function storeValue(key, value) {
+	//add some code to store the key-value pair in persistant storage 
+}

@@ -1,117 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    
 </head>
+
 <body>
 
-<!-- Homepage to get me started -->
+<div data-role="page" id="pageone">
+        
+ 	<div data-role="header">Header</div>
+        
+  	<div role="main" class="ui-content">
+    
+  		<input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+  	    <button id="submitButton">Submit B</button>
 
-<div data-role="page" id="homepage">
-  <div data-role="panel" id="myPanel">
-	<h2>Menu</h2>
-	<a href="#homepage" class="ui-btn ui-shadow ui-corner-all">Homepage</a>
-	<a href="#Festivals" class="ui-btn ui-shadow ui-corner-all">Festivals</a>
-	<a href="#Beers" class="ui-btn ui-shadow ui-corner-all">Beers</a>
-	<a href="#Brewery" class="ui-btn ui-shadow ui-corner-all">Brewery</a>
+    </div>
+        
+    <div data-role="footer">Footer</div>
 	</div>
-		
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
-  
-    <div data-role="main" class="ui-content">
-    <p>Welcome to My Homepage.</p> 
-	<a href="#myPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Open Panel</a>
-  </div>
-
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-
-  </div>
-</div>
-
-<!-- Page 1 -->
-
-<div data-role="page" id="Festivals">
-  <div data-role="panel" id="overlayPanel" data-display="overlay">
-	<h2>Menu</h2>
-	<a href="#homepage" class="ui-btn ui-shadow ui-corner-all">Homepage</a>
-	<a href="#Festivals" class="ui-btn ui-shadow ui-corner-all">Festivals</a>
-	<a href="#Beers" class="ui-btn ui-shadow ui-corner-all">Beers</a>
-	<a href="#Brewery" class="ui-btn ui-shadow ui-corner-all">Brewery</a>
-	</div>
-  <div data-role="header">
-    <h1>Welcome The festivals page</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>Welcome The festivals page</p>
-<a href="#overlayPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Open Panel</a>
-  </div>
-
-	
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-
-  </div>
-</div>
-
-<!-- Page 2 -->
-
-<div data-role="page" id="Beers">
-  <div data-role="panel" id="revealPanel" data-display="reveal">
-	<h2>Menu</h2>
-	<a href="#homepage" class="ui-btn ui-shadow ui-corner-all">Homepage</a>
-	<a href="#Festivals" class="ui-btn ui-shadow ui-corner-all">Festivals</a>
-	<a href="#Beers" class="ui-btn ui-shadow ui-corner-all">Beers</a>
-	<a href="#Brewery" class="ui-btn ui-shadow ui-corner-all">Brewery</a>
-	</div>
-  <div data-role="header">
-    <h1>Welcome the Beers page</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>Welcome the Beers page</p>
-<a href="#revealPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Open Panel</a>
-  </div>
-
-	
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-
-  </div>
-</div>
-
-<!-- Page 3 -->
-
-<div data-role="page" id="Brewery">
-  <div data-role="panel" id="pushPanel" data-display="push">
-	<h2>Menu</h2>
-	<a href="#homepage" class="ui-btn ui-shadow ui-corner-all">Homepage</a>
-	<a href="#Festivals" class="ui-btn ui-shadow ui-corner-all">Festivals</a>
-	<a href="#Beers" class="ui-btn ui-shadow ui-corner-all">Beers</a>
-	<a href="#Brewery" class="ui-btn ui-shadow ui-corner-all">Brewery</a>
-	</div>
-  <div data-role="header">
-    <h1>Welcome to the Brewery page</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>Welcome to the Brewery page</p>
-<a href="#pushPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Open Panel</a>
-  </div>
-
-	
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-
-  </div>
-</div>
 
 </body>
 </html>
-
